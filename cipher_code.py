@@ -1,5 +1,5 @@
 def caesar(text, shift, encrypt=True):
-
+    """ This function encrypts or decrypts a text by a shift value."""
     if not isinstance(shift, int):
         return 'Shift must be an integer value.'
 
@@ -8,6 +8,7 @@ def caesar(text, shift, encrypt=True):
 
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
+    # for decryption
     if not encrypt:
         shift = - shift
     
